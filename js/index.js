@@ -6,7 +6,7 @@ app.get('/',function(req,res){
 	res.send('<h1>Welocme Realtime Server</h1>');
 });
 
-var onlineUser = {};
+var onlineUsers = {};
 var onlineCount = 0;
 
 io.on('connection', function(socket){
